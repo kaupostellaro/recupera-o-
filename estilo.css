@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    background: 		#008000 ;
+    height: 10vh;
+    opacity: 90%;
+}
+
+#banner {
+    background: url("fotos/banner.jpg") no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+    opacity: 100%;
+
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+
+body{
+    background-color: #cc0000;
+}
+
+h1{
+    color: 		#FFFFF0;
+    font-family: sans-serif;
+ 
+}
+
+
+p{
+    font-size: 15pt;
+    color: #fff;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border: black 2px solid;
+    border-radius: 1%;
+}
+
+img{
+    height: 400px;
+    width: 800px;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navgation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10pt;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:Last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navgation-auto div{
+    border: 2px solid #191970;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navgation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navgation-auto div:not(:Last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navgation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navgation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navgation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navgation-auto .auto-btn4{
+    background-color: #fff;
+}
+
